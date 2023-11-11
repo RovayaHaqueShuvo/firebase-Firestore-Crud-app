@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="377dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/IdEDTXT"
+                style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:hint="ID"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/NameEDTXT"
+                style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:hint="Name"
+                app:layout_constraintBottom_toBottomOf="@+id/IdEDTXT"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/IdEDTXT"
+                app:layout_constraintTop_toTopOf="@+id/IdEDTXT" />
+
+            <EditText
+                android:id="@+id/EmailEDTXT"
+                style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Email"
+                app:layout_constraintEnd_toEndOf="@+id/NameEDTXT"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/IdEDTXT"
+                app:layout_constraintTop_toBottomOf="@+id/IdEDTXT">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/BirthdayEDTXT"
+                style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Birthday"
+                app:layout_constraintEnd_toEndOf="@+id/EmailEDTXT"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/EmailEDTXT"
+                app:layout_constraintTop_toBottomOf="@+id/EmailEDTXT">
+
+            </EditText>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

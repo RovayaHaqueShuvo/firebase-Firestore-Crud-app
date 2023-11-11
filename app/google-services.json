@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "840691625631",
+    "firebase_url": "https://fir-firestore-crud-app-e32b0-default-rtdb.firebaseio.com",
+    "project_id": "fir-firestore-crud-app-e32b0",
+    "storage_bucket": "fir-firestore-crud-app-e32b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840691625631:android:7b2ce1a64dcea7a395fcaa",
+        "android_client_info": {
+          "package_name": "com.webcode.firebase_firestore_crud_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvPb6pNFby6zD2KAM9SkFi-xwEjdosmp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840691625631:android:fc2c8d11c88c2e5995fcaa",
+        "android_client_info": {
+          "package_name": "com.webcode.firebasefirestorecrudapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvPb6pNFby6zD2KAM9SkFi-xwEjdosmp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
