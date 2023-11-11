@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="377dp"
         android:layout_height="210dp"
         android:layout_marginTop="24dp"
@@ -15,13 +16,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <EditText
+                android:padding="5dp"
                 android:id="@+id/IdEDTXT"
                 style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
                 android:layout_width="80dp"
@@ -36,6 +38,7 @@
 
             <EditText
                 android:id="@+id/NameEDTXT"
+                android:padding="5dp"
                 style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -47,6 +50,7 @@
                 app:layout_constraintTop_toTopOf="@+id/IdEDTXT" />
 
             <EditText
+                android:padding="5dp"
                 android:id="@+id/EmailEDTXT"
                 style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
                 android:layout_width="0dp"
@@ -61,6 +65,7 @@
             </EditText>
 
             <EditText
+                android:padding="5dp"
                 android:id="@+id/BirthdayEDTXT"
                 style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
                 android:layout_width="0dp"
@@ -75,12 +80,64 @@
             </EditText>
 
             <Button
+                android:id="@+id/EditBTN"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="Edit"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/SaveBTN"
+                app:layout_constraintEnd_toStartOf="@+id/SaveBTN"
+                app:layout_constraintStart_toStartOf="@+id/BirthdayEDTXT"
+                app:layout_constraintTop_toTopOf="@+id/SaveBTN"
+                app:strokeColor="#000000"
+                app:strokeWidth="2sp" />
+
+            <Button
+                android:id="@+id/SaveBTN"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
                 android:text="SAVE"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/BirthdayEDTXT"
+                app:layout_constraintTop_toBottomOf="@+id/BirthdayEDTXT"
+                app:strokeColor="#000000"
+                app:strokeWidth="2sp" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
+    <Button
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="ADD"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/RecyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/RecyclerView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="1.0"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" >
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
